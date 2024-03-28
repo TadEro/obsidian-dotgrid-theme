@@ -1,34 +1,33 @@
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+	--font-text-theme: Consolas;
+	--bold-color: #ff00ff;
+	--italic-color: #ffff00
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
+.slider {
+	--slider-thumb-radius:5px;
+	--slider-track-background: #ff003a;
+	--slider-track-height: 1px;
+	--slider-thumb-border-width: 1px;
+	--slider-thumb-border-color: #aaaaaa;
 }
 
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
+.theme-dark {
+	--button-radius: 2px;
+	--color-base-00: #000000;
 }
 
-.menu {
-	padding: var(--size-2-1);
+
+/* i was having trouble getting this to work until i removed the two hyphens before the name.
+this removes the little icon after external links */
+.external-link {
+	background-image: unset;
+	padding-right: 0px;
+	text-decoration: none;
 }
 
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
-}
-
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+/* FILE VIEW FONT */
+.nav-file-title-content {
+	font-family: Consolas;
+	font-weight: 600;
 }
